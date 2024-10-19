@@ -3,3 +3,30 @@ print(a)
 type(a) //shows type
 
 methods to typecast str() int() bool float()
+
+str(a)
+
+int(b)
+
+bool(g)
+float(f)
+
+a=input()
+b=int(input())
+
+print(f"age{a}")
+
+Math functions
+
+round() 
+abs()
+pow(x,y)
+max(x,y,....)
+min(x,y,.....)
+
+if we want to print pi value and other some math functions than we have to import Like //import math 
+
+a=math.pi
+math.sqrt(3)
+math.celi(9.1)
+math.floor(9.1)
