@@ -1,0 +1,134 @@
+Slicing
+You can return a range of characters by using the slice syntax.
+b = "Hello, World!"
+print(b[2:5]) # llo
+
+Slice From the Start
+By leaving out the start index, the range will start at the first character:
+
+b = "Hello, World!"
+print(b[:5]) #​Hello
+
+Slice To the End
+By leaving out the end index, the range will go to the end:
+
+b = "Hello, World!"
+print(b[2:])
+
+Negative Indexing
+Use negative indexes to start the slice from the end of the string:
+Example
+Get the characters:
+
+From: "o" in "World!" (position -5)
+
+To, but not included: "d" in "World!" (position -2):
+
+b = "Hello, World!"
+print(b[-5:-2])#orl 
+it traverse form last index starts form -1 -2 -3 ..............
+
+String Length
+To get the length of a string, use the len() function.
+
+Example
+The len() function returns the length of a string:
+
+a = "Hello, World!"
+print(len(a))
+
+Check String
+To check if a certain phrase or character is present in a string, we can use the keyword in.
+
+Example
+Check if "free" is present in the following text:
+
+txt = "The best things in life are free!"
+print("free" in txt)
+
+print only if "expensive" is NOT present:
+
+txt = "The best things in life are free!"
+if "expensive" not in txt:
+  print("No, 'expensive' is NOT present.")
+
+Python - Modify Strings
+
+The upper() method returns the string in upper case:
+
+a = "Hello, World!"
+print(a.upper())
+
+The lower() method returns the string in lower case:
+
+a = "Hello, World!"
+print(a.lower())
+
+Remove Whitespace
+Whitespace is the space before and/or after the actual text, and very often you want to remove this space.
+
+Example
+The strip() method removes any whitespace from the beginning or the end:
+
+a = " Hello, World! "
+print(a.strip()) # returns "Hello, World!"
+
+Replace String
+Example
+The replace() method replaces a string with another string:
+
+a = "Hello, World!"
+print(a.replace("H", "J"))
+
+Split String
+The split() method returns a list where the text between the specified separator becomes the list items.
+
+Example
+The split() method splits the string into substrings if it finds instances of the separator:
+
+a = "Hello, World!"
+print(a.split(",")) # returns ['Hello', ' World!']
+
+F-Strings
+F-String was introduced in Python 3.6, and is now the preferred way of formatting strings.
+
+To specify a string as an f-string, simply put an f in front of the string literal, and add curly brackets {} as placeholders for variables and other operations.
+
+Example
+Create an f-string:
+
+age = 36
+txt = f"My name is John, I am {age}"
+print(txt)
+
+Escape Character
+To insert characters that are illegal in a string, use an escape character.
+
+An escape character is a backslash \ followed by the character you want to insert.
+
+An example of an illegal character is a double quote inside a string that is surrounded by double quotes:
+
+You will get an error if you use double quotes inside a string that is surrounded by double quotes:
+
+txt = "We are the so-called "Vikings" from the north."
+
+Example
+The escape character allows you to use double quotes when you normally would not be allowed:
+
+txt = "We are the so-called \"Vikings\" from the north."
+
+Evaluate Values and Variables
+The bool() function allows you to evaluate any value, and give you True or False in return,
+print(bool("Hello"))
+print(bool(15))
+Any list, tuple, set, and dictionary are True, except empty ones.Any string is True, except empty strings.
+
+The following will return False:
+
+bool(False)
+bool(None)
+bool(0)
+bool("")
+bool(())
+bool([])
+bool({})
