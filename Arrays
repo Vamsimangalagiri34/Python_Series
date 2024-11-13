@@ -1,0 +1,22 @@
+What is an Array?
+An array is a special variable, which can hold more than one value at a time.
+
+If you have a list of items (a list of car names, for example), storing the cars in single variables could look like this:
+
+import array
+
+# Creating an array of integers
+my_array = array.array('i', [1, 2, 3, 4])
+
+# Using some methods
+my_array.append(5)
+my_array.insert(2, 10)
+my_array.pop()
+my_array.remove(10)
+print(my_array)  # Output: array('i', [1, 2, 3, 4])
+
+Common Type Codes for Arrays
+'i': Integer
+'f': Float
+'d': Double precision float
+'u': Unicode character
