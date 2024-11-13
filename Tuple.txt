@@ -71,3 +71,42 @@ If you have any questions or need clarification on any aspect of tuples, feel fr
 
 
 ***Tuples in Python are immutable to improve memory efficiency, performance, and data integrity. Their immutability makes them hashable, allowing them to be used as dictionary keys or set elements. It also enables performance optimizations, as their contents cannot change. Additionally, immutability ensures that tuples remain consistent and safe from unintended modifications during program execution.
+
+Unpacking a Tuple
+
+fruits = ("apple", "banana", "cherry")
+
+(green, yellow, red) = fruits
+
+print(green)
+print(yellow)
+print(red)
+
+Using Asterisk*
+If the number of variables is less than the number of values, you can add an * to the variable name and the values will be assigned to the variable as a list:
+fruits = ("apple", "banana", "cherry", "strawberry", "raspberry")
+
+(green, yellow, *red) = fruits
+
+print(green)
+print(yellow)
+print(red)
+
+Join Two Tuples
+
+tuple1 = ("a", "b" , "c")
+tuple2 = (1, 2, 3)
+
+tuple3 = tuple1 + tuple2
+print(tuple3)
+
+Multiply Tuples
+If you want to multiply the content of a tuple a given number of times, you can use the * operator:
+
+Example
+Multiply the fruits tuple by 2:
+
+fruits = ("apple", "banana", "cherry")
+mytuple = fruits * 2
+
+print(mytuple)

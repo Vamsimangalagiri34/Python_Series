@@ -1,5 +1,8 @@
 Certainly! A dictionary is a built-in data structure in programming languages like Python. It is a collection of key-value pairs that allows you to store and retrieve data efficiently. Let’s break it down step by step:
 
+thisdict = dict(name = "John", age = 36, country = "Norway")
+print(thisdict)
+
 ### Key Points About Dictionaries
 
 1. **Structure**:
@@ -84,6 +87,8 @@ person = {
 # Accessing values
 print(person['name'])  # Output: Bob
 
+x = thisdict.get("model")
+
 # Adding a new key-value pair
 person['country'] = 'USA'
 
@@ -103,3 +108,62 @@ for key, value in person.items():
 Dictionaries are an essential data structure in Python for handling key-value pairs. They are versatile and allow for easy data retrieval, manipulation, and organization.
 
 If you have any specific questions or need help with a particular aspect of dictionaries, feel free to ask!
+
+
+Get Keys
+
+Get a list of the keys:
+
+x = thisdict.keys()
+
+Get a list of the values:
+
+x = thisdict.values()
+
+Get a list of the key:value pairs
+
+x = thisdict.items()
+
+The pop() method removes the item with the specified key name:
+
+thisdict.pop("model")
+
+The popitem() method removes the last inserted item (in versions before 3.7, a random item is removed instead)
+thisdict.popitem()
+
+del thisdict["model"]
+
+The del keyword can also delete the dictionary completely:
+
+del thisdict
+
+The clear() method empties the dictionary:
+
+thisdict.clear()
+
+
+Print all values in the dictionary, one by one:
+
+for x in thisdict:
+  print(thisdict[x])
+
+You can also use the values() method to return values of a dictionary:
+
+for x in thisdict.values():
+  print(x)
+
+
+ou can use the keys() method to return the keys of a dictionary:
+
+for x in thisdict.keys():
+  print(x)
+
+Loop through both keys and values, by using the items() method:
+
+for x, y in thisdict.items():
+  print(x, y)
+
+Make a copy of a dictionary with the copy() method:
+
+mydict = thisdict.copy() or 
+mydict = dict(thisdict)

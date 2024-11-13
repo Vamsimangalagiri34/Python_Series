@@ -46,23 +46,39 @@ print("Is 2 in my set?", 2 in my_set)  # Output: True
 other_set = {3, 4, 5}
 
 # Union
-union_set = my_set.union(other_set)
+union_set = my_set.union(other_set) # we can also use | instead
 print("Union of sets:", union_set)  # Output: {1, 2, 3, 4, 5}
 
-# Intersection
+# Intersection # we can also use & instead
 intersection_set = my_set.intersection(other_set)
 print("Intersection of sets:", intersection_set)  # Output: {4}
 
-# Difference
+# Difference # we can also use - instead
 difference_set = my_set.difference(other_set)
 print("Difference of sets:", difference_set)  # Output: {1, 2}
+
+Symmetric Differences ## we can also use ^ instead
+The symmetric_difference() method will keep only the elements that are NOT present in both sets.
+
+Example
+Keep the items that are not present in both sets:
+
+set1 = {"apple", "banana", "cherry"}
+set2 = {"google", "microsoft", "apple"}
+
+set3 = set1.symmetric_difference(set2)
+
+print(set3)
+ 
+You can use the ^ operator instead of the symmetric_difference() method, and you will get the same result.
+
 ```
 
 ### Key Points:
 - Sets are great for managing collections of unique items.
 - They allow efficient membership testing and are optimized for performance.
 - Useful when you need to perform mathematical set operations like union, intersection, and difference.
-- Set allows multiple data types
+- Set allows multiple data types,mutable ,but we cant change the item after set has been created
 ### Conclusion:
 Understanding sets and their operations can significantly enhance your ability to manage collections of data in programming. Try experimenting with sets in your favorite programming language to solidify your understanding! If you have more specific questions or need help with a certain problem related to sets, feel free to ask!# Creating a set with multiple data types
 
@@ -72,3 +88,24 @@ print(my_set)
 
 {1, 2.5, 'hello', (1, 2)}
 
+
+Add Sets
+To add items from another set into the current set, use the update() method.
+ thisset = {"apple", "banana", "cherry"}
+tropical = {"pineapple", "mango", "papaya"}
+
+thisset.update(tropical) 3 we can use  |= also 
+
+print(thisset)
+
+
+Note: If the item to remove does not exist, remove() will raise an error.
+
+
+Remove "banana" by using the discard() method:
+
+thisset = {"apple", "banana", "cherry"}
+
+thisset.discard("banana")
+
+print(thisset) 
