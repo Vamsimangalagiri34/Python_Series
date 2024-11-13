@@ -132,3 +132,11 @@ bool("")
 bool(())
 bool([])
 bool({})
+
+Hello ,World!
+result = text[::2]  # 'Hlo ol!'
+
+reversed_text = text[::-1]  # '!dlroW ,olleH'
+
+str='helo world'
+print(str[::3])  #hood by default step is 1 so when  we give step size as 2 it will jump by just 1 step (n-1) jumos do
