@@ -1,0 +1,71 @@
+Sure! In Python, a **generator** is a special type of iterable that allows you to iterate through a sequence of values one at a time and on-demand, rather than storing the entire sequence in memory at once. This can save memory and improve performance, especially with large datasets.
+
+Generator are the functions which contains yeild keyword 
+
+def fun():
+    return 1
+    retutn 2
+    retutn 3 #this will print only 1 remaingin 2 and 3 will not print
+
+def fun2():
+for i in range(10):
+     yeild i 
+result =fun2()
+ this all result will store in result 
+we can access this by using iterative statement or by using next()
+
+print(result.__next__())
+print(result.__next__()) like we can get this values 
+
+### Key Points about Generators:
+
+1. **Lazy Evaluation**: Generators produce items only when requested, which means they are memory efficient.
+  
+2. **Creation**: You can create a generator using a function with the `yield` statement or with generator expressions.
+
+3. **Iteration**: Generators can be iterated over using a loop or by calling the `next()` function.
+
+4. **State Retention**: Generators maintain their state between iterations, so they remember where they left off.
+
+### Example of a Generator Function:
+
+Here’s a simple example of a generator function that yields squares of numbers:
+
+```python
+def square_generator(n):
+    for i in range(n):
+        yield i * i
+
+# Using the generator
+for square in square_generator(5):
+    print(square)
+```
+
+### Explanation of the Example:
+
+1. **Function Definition**: We define a function `square_generator(n)` which takes an integer `n`.
+
+2. **Yield Statement**: Inside the function, we use a `for` loop to iterate over a range from `0` to `n-1`. For each `i`, we calculate the square `i * i` and `yield` it. The `yield` statement turns the function into a generator.
+
+3. **Using the Generator**: When we call `square_generator(5)`, it returns a generator object. We can then iterate over this object using a `for` loop, which will invoke the generator and receive the squares one at a time until there are no more items to yield.
+
+### Example of a Generator Expression:
+
+You can also create generators using generator expressions, which are similar to list comprehensions but use parentheses instead of square brackets:
+
+```python
+# Generator expression for squares
+squares = (i * i for i in range(5))
+
+# Using the generator expression
+for square in squares:
+    print(square)
+
+### Key Differences Between Generators and Regular Functions:
+
+# - A regular function computes all values and returns them as a list, while a generator computes one value at a time and uses `yield` to return it.
+# - Generators can produce an infinite sequence of items, while regular functions require all items to be defined upfront.
+
+# ### Conclusion:
+
+# Generators are powerful tools in Python that help manage memory efficiently, especially when working with large data sets or streams of data. They provide a way to create iterators in a clear and concise manner. You can use them whenever you need to iterate through a sequence of data without loading everything into memory at once.
