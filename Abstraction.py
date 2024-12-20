@@ -7,7 +7,7 @@
 # 2. **Interface**: In Python, abstraction can be achieved using abstract base classes (ABCs) and interfaces.
 # 3. **Encapsulation**: It often works in conjunction with encapsulation, which restricts access to certain components.
 
-# ### How to Achieve Abstraction in Python
+# ### How to Achieve Abstraction in Python 
 # Python offers abstract classes through the `abc` module. Here's a step-by-step explanation of how to create and use abstraction in Python:
 
 # #### Step 1: Import the abc Module
