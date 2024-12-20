@@ -22,3 +22,6 @@ print(fun(2, 4))
 # Inside inner, it checks if a > b. If true, it swaps a and b to ensure a is always less than or equal to b.
 # Then, it calls the original function fun with the (potentially swapped) values of a and b.
 # Return Value: The inner function returns the result of fun(a, b), which in this case is a / b.
+
+
+# Decorators in Python are functions that take another function (or method) as an argument and return a new function that usually extends or modifies the behavior of the original function. 

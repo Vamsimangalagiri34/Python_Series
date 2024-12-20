@@ -5,6 +5,7 @@ It looks like you're asking for information about sets in programming. A "set" i
 1. **Definition**: 
    - A set is a collection of distinct elements, meaning there are no duplicate values.
 
+
 2. **Properties**:
    - **Uniqueness**: Each element can only appear once.
    - **Unordered**: The elements do not maintain a specific order.
@@ -109,3 +110,39 @@ thisset = {"apple", "banana", "cherry"}
 thisset.discard("banana")
 
 print(thisset) 
+
+
+
+# Create the initial set
+s = {1, 32, 4, 52, 89, 4}
+
+# Add an element to the set
+s.add(222)
+
+# Remove an element
+s.remove(32)
+
+# Discard an element (will not raise an error if the element doesn't exist)
+s.discard(552)
+
+# Update the set with elements from another set
+s.update({100, 200, 300})
+
+# Perform an intersection with another set
+result = s.intersection({10, 100, 200, 400})
+
+# Print the result of the intersection
+print("Intersection result:", result)
+
+# Union with another set (combine elements from both sets)
+union_result = s.union({5, 10, 20})
+print("Union result:", union_result)
+
+# Difference between two sets (elements in s but not in another set)
+difference_result = s.difference({100, 400})
+print("Difference result:", difference_result)
+
+# Symmetric difference (elements in either set, but not both)
+symmetric_difference_result = s.symmetric_difference({10, 20, 400})
+print("Symmetric Difference result:", symmetric_difference_result)
+

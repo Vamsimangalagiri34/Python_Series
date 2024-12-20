@@ -5,7 +5,7 @@ You can create a tuple by placing all the items inside parentheses `()`, separat
 
 ```python
 # An empty tuple
-empty_tuple = ()
+empty_tuple = () 
 
 # A tuple with multiple items
 my_tuple = (1, 2, 3)
@@ -41,7 +41,7 @@ Tuples have only two built-in methods. Let's go over them:
 
      # With start and end parameters
      index_of_1 = my_tuple.index(1, 2)  # Search for 1 starting from index 2
-     print(index_of_1)  # Output: 3
+     print(index_of_1)  # Output: 3 
      ```
 
 ### Key Characteristics of Tuples
